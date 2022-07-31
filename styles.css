@@ -85,7 +85,7 @@ section{
     line-height: 21px;
 }
 
-.collumn span:last-of-type, .point, #content-time{
+.collumn span:last-of-type, .point{
     color: var(--black);
     font-size: 72px;
     font-weight: 400;

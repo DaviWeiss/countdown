@@ -14,7 +14,9 @@ function countDown(){
         document.getElementById("seconds").innerText = seconds;
         if (distance < 0) {
             clearInterval(time);
-            document.getElementById("content-time").innerHTML = "TEMPO EXPIRADO";
+            const contentTime = document.getElementById("content-time");
+            contentTime.innerHTML = "TEMPO EXPIRADO";
+            contentTime.style = "color: #4D4C59; font-size: 72px; font-weight: 400; line-height: 108px;"
         }
     }, 1000);
 }
