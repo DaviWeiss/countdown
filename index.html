@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+    <title>Countdown</title>
+</head>
+<body>
+    
+    <div class="imgs-top-bottom top">
+    </div>
+    <main>
+        <section>
+            <h1 class="title">
+                DESAFIOS ROCKETSEAT
+            </h1>
+            <div id="content-time">
+                <div class="row-time">
+                    <div class="collumn">
+                        <span>Dias</span>
+                        <span id="days"></span>
+                    </div>
+                    <span class="point">:</span>
+                    <div class="collumn">
+                        <span>Horas</span>
+                        <span id="hours"></span>
+                    </div>
+                    <span class="point">:</span>
+                    <div class="collumn">
+                        <span>Minutos</span>
+                        <span id="minutes"></span>
+                    </div>
+                    <span class="point">:</span>
+                    <div class="collumn">
+                        <span>Segundos</span>
+                        <span id="seconds"></span>
+                    </div>
+                </div>
+                <p>Inscreva-se para saber mais sobre o lançamento</p>
+                <div class="box-button">
+                    <button onclick="switchModal()">Inscreva-se</button>
+                </div>
+            </div>
+        </section>
+        <img class="img-rocket" src="./assets/imgs/rocket.svg">
+    </main>
+    <div class="imgs-top-bottom bottom">
+    </div>
+    <div class="modal">
+        <div class="content">
+            <form>
+                <input type="text" id="name-user" placeholder="Digite seu nome aqui" required>
+                <input type="email" id="email-user" placeholder="Digite seu e-mail aqui" required>
+                <input type="submit" value="Inscreva-se" onclick="return false">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
