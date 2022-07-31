@@ -1,5 +1,5 @@
 function countDown(){
-    const finalDate = new Date("July 31, 2022 15:11:00").getTime();
+    const finalDate = new Date("August 12, 2022 23:59:59").getTime();
     const time = setInterval(function() {
         const todayDate = new Date().getTime();
         const distance = finalDate - todayDate;
